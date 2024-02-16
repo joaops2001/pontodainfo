@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ponto da Informática</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="assets/fonts/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,9 +15,19 @@
   </head>
   <body>
     <header id="header">
-      <nav class="container">
+      <nav class="container show">
         <a class="logo">Ponto<span>Info</span></a>
-        <div class="menu"></div>
+        <div class="menu">
+          <ul class="grid">
+            <li><a class="title" href="#home">Início</a></li>
+            <li><a class="title" href="#about">Sobre</a></li>
+            <li><a class="title" href="#services">Serviços</a></li>
+            <li><a class="title" href="#clients">Clientes</a></li>
+            <li><a class="title" href="#contact">Contato</a></li>
+          </ul>
+        </div>
+        <div class="toogle icon-menu"></div>
+        <div class="toogle icon-close"></div>
       </nav>
     </header>
     <main>
@@ -25,9 +36,9 @@
           <div class="image"><img src="assets/RJ45cables.jpg" alt="" /></div>
 
           <div class="text">
-            <h1>
+            <h2 class="title">
               Manutenção de computadores, instalações e papelaria em geral
-            </h1>
+            </h2>
             <p>
               Materiais de Informática, eletrônicos em geral ✅ <br />
               Venda, serviço de manutenção de Notebooks, computadores,
@@ -44,7 +55,25 @@
 
       <div class="divider-1"></div>
 
-      <section class="section">
+      <section class="section" id="about">
+        <div class="container">outra section</div>
+      </section>
+
+      <div class="divider-1"></div>
+
+      <section class="section" id="services">
+        <div class="container">outra section</div>
+      </section>
+
+      <div class="divider-1"></div>
+
+      <section class="section" id="clients">
+        <div class="container">outra section</div>
+      </section>
+
+      <div class="divider-1"></div>
+
+      <section class="section" id="contact">
         <div class="container">outra section</div>
       </section>
     </main>
