@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ponto da Informática</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="assets/fonts/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -15,8 +19,8 @@
   </head>
   <body>
     <header id="header">
-      <nav class="container show">
-        <a class="logo">Ponto<span>Info</span></a>
+      <nav class="container">
+        <a class="logo"><span>Ponto</span>Info</a>
         <div class="menu">
           <ul class="grid">
             <li><a class="title" href="#home">Início</a></li>
@@ -26,25 +30,20 @@
             <li><a class="title" href="#contact">Contato</a></li>
           </ul>
         </div>
-        <div class="toogle icon-menu"></div>
-        <div class="toogle icon-close"></div>
+        <div class="toggle icon-menu"></div>
+        <div class="toggle icon-close"></div>
       </nav>
     </header>
     <main>
       <section class="section" id="home">
         <div class="container grid">
-          <div class="image"><img src="assets/RJ45cables.jpg" alt="" /></div>
-
+          <div class="image"><img src="assets/logo.svg" alt="" /></div>
+          <div class="backsquare"></div>
           <div class="text">
-            <h2 class="title">
-              Manutenção de computadores, instalações e papelaria em geral
-            </h2>
+            <h2 class="title">Ponto da Informática</h2>
             <p>
-              Materiais de Informática, eletrônicos em geral ✅ <br />
-              Venda, serviço de manutenção de Notebooks, computadores,
-              assistência Técnica e estruturação de rede✅ <br />
-              Papelaria de Qualidade ✅ <br />
-              Impressões, revelação de fotos e encadernação
+              Manutenção de computadores, instalações e papelaria em geral
+
             </p>
             <a class="button" href="http://wa.me/555136741014"
               >Fazer um orçamento</a
@@ -56,26 +55,144 @@
       <div class="divider-1"></div>
 
       <section class="section" id="about">
-        <div class="container">outra section</div>
+        <div class="container grid">
+          <div class="image">
+            <img src="assets/aboutus.jpg" alt="" />
+          </div>
+          <div class="text">
+            <h2 class="title">Sobre Nós</h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis
+              accusamus non recusandae esse soluta, distinctio illo deserunt?
+              Optio animi impedit velit maiores! Corrupti dolor quaerat repellat
+              quod. Ex, iste voluptates?
+            </p>
+            <br />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Doloremque hic recusandae dolore sapiente ab quas dolorem commodi
+              corporis nulla. Sequi eos, commodi eius nam maxime facere ea rerum
+              atque esse?
+            </p>
+            <br />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
+              similique, inventore, blanditiis et pariatur minima commodi
+              nostrum illo voluptates praesentium obcaecati maiores ipsa neque
+              amet eaque impedit officiis, deleniti quam.
+            </p>
+          </div>
+        </div>
       </section>
 
-      <div class="divider-1"></div>
+      <div class="divider-2"></div>
 
       <section class="section" id="services">
-        <div class="container">outra section</div>
+        <div class="container grid">
+          <header>
+            <h2 class="title">Serviços</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+              in odit, beatae dolores delectus obcaecati a nam quidem excepturi,
+              numquam alias deleniti ratione quas quam tenetur nobis repellat
+              necessitatibus quo.
+            </p>
+          </header>
+          <div class="cards grid">
+            <div class="card">
+              <ion-icon name="at-circle-outline"></ion-icon>
+              <h3 class="title">Informática</h3>
+              <p>
+                Materiais de Informática, eletrônicos em geral.
+              </p>
+            </div>
+            <div class="card">
+              <ion-icon name="build-outline"></ion-icon>
+              <h3 class="title">Assistência Técnica</h3>
+              <p>
+                Venda, serviço de manutenção de Notebooks, computadores, assistência Técnica e estruturação de redes.
+              </p>
+            </div>
+            <div class="card">
+              <ion-icon name="book-outline"></ion-icon>
+              <h3 class="title">Papelaria</h3>
+              <p>
+                Papelaria de Qualidade, impressões, revelação de fotos e encadernação.
+              </p>
+            </div>
+          </div>
+        </div>
       </section>
 
       <div class="divider-1"></div>
 
       <section class="section" id="clients">
-        <div class="container">outra section</div>
+        <div class="container swiper">
+          <header>
+            <h2 class="title">Clientes</h2>
+          </header>
+          <div class="clients swiper-container">
+            <div class="swiper-wrapper">
+              <div class="client swiper-slide">
+                <div class="txt">
+                  <img src="assets/planob.png" alt="" />
+                  <h3 class="title">Loja ABC</h3>
+                </div>
+              </div>
+              <div class="client swiper-slide">
+                <div class="txt">
+                  <img src="assets/planob.png" alt="" />
+                  <h3 class="title">Loja ABC</h3>
+                </div>
+              </div>
+              <div class="client swiper-slide">
+                <div class="txt">
+                  <img src="assets/planob.png" alt="" />
+                  <h3 class="title">Loja ABC</h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
       </section>
-
-      <div class="divider-1"></div>
-
+      <div class="divider-2"></div>
       <section class="section" id="contact">
-        <div class="container">outra section</div>
+        <div class="container grid">
+          <div class="text">
+            <h2 class="title">Entre em contato com a gente</h2>
+            <p></p>
+            <a class="button" href="http://wa.me/555136741014" target="_blank"
+              >Entrar em contato</a
+            >
+          </div>
+          <div class="links">
+            <ul>
+              <li><ion-icon name="logo-whatsapp"></ion-icon><a href="http://wa.me/5551996324638" target="_blank"> (51)99632-4638</a></li>
+              <li><ion-icon name="logo-instagram"></ion-icon></ion-icon><a href="http://instagram.com/pontodainformatic" target="_blank"> @pontodainformatic</a></li>
+              <li><ion-icon name="logo-facebook"></ion-icon><a href="https://www.facebook.com/profile.php?id=100031704864620" target="_blank"> Ponto da Informática</a></li>
+            </ul>
+          </div>
+        </div>
       </section>
     </main>
+
+    <footer>
+      <ion-icon name="location-outline"></ion-icon
+      ><a href="https://maps.app.goo.gl/X4ng27pmBrv5S2EQA"
+        >R. Edgardo P Velho, 125 - Tavares, RS
+      </a>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>
