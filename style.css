@@ -25,7 +25,7 @@ img {
   /* colors */
   --hue: 49;
   /* HSL color mode */
-  --base-color: hsl(var(--hue) 100% 50%);
+  --base-color: hsl(var(--hue) 100% 49%);
   --base-color-second: hsl(var(--hue) 50% 80%);
   --base-color-alt: hsl(var(--hue) 100% 60%);
   --title-color: hsl(var(--hue) 100% 0%);
@@ -418,7 +418,13 @@ main {
 .swiper-pagination-bullet-active {
   background: var(--base-color);
 }
-
+.swiper-button-prev,
+.swiper-button-next {
+  color: var(--base-color);
+  font-weight: bold;
+  margin: 0 1.5vh;
+  opacity: 75%;
+}
 /* contato */
 #contact {
   text-align: center;
@@ -469,17 +475,31 @@ main {
 
 footer {
   background-color: var(--base-color);
-  display: inline-flex;
+  display: flex;
+  flex-direction: column;
   text-align: center;
   justify-content: center;
-  padding: 2.5rem;
+
   width: 100%;
-  border-top: solid 2px hsl(var(--hue), 100%, 20%);
+  border-top: solid 2px hsl(var(--hue), 100%, 40%);
+  padding: 2.5rem;
 }
+footer .brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+footer img {
+  width: 30px;
+}
+footer .logo span {
+  color: var(--body-color);
+}
+
 footer ion-icon {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   text-align: center;
-  justify-content: center;
   color: var(--title-color);
 }
 footer a {
@@ -487,4 +507,21 @@ footer a {
   text-align: center;
   justify-content: center;
   color: var(--title-color);
+}
+footer .text {
+  display: flex;
+  align-items: center;
+}
+
+footer .back-to-top {
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+}
+
+footer .back-to-top a ion-icon {
+  padding: 0.5rem;
+  background-color: var(--base-color);
+  clip-path: circle();
+  opacity: 90%;
 }
