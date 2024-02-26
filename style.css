@@ -20,7 +20,7 @@ img {
 
 /*====  VARIABLES ============================ */
 :root {
-  --header-height: 4.5rem;
+  --header-height: 4rem;
 
   /* colors */
   --hue: 49;
@@ -93,7 +93,8 @@ body {
 }
 
 .section {
-  padding: 2rem 0;
+  padding: 4rem 0;
+  transition: 0.2s;
 }
 .section .title {
   margin-bottom: 1rem;
@@ -511,17 +512,35 @@ footer a {
 footer .text {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 footer .back-to-top {
   position: fixed;
   right: 2rem;
-  bottom: 2rem;
+  bottom: 3.5rem;
+  z-index: 1;
 }
 
 footer .back-to-top a ion-icon {
   padding: 0.5rem;
   background-color: var(--base-color);
   clip-path: circle();
-  opacity: 90%;
 }
+.back-to-top {
+  opacity: 0%;
+  visibility: hidden;
+  transition: 0.3s;
+  transform: translateY(120%);
+}
+.back-to-top.show {
+  visibility: visible;
+  opacity: 80%;
+  transform: translateY(0);
+}
+
+/* MEDIA QUERIES */
+/*Extra large devices 1200 >*/
+/*large devices 1023 >*/
+/*large devices 992 >*/
+@media (min-width: 992px); /*700> >*/
