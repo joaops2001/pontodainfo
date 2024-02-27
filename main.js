@@ -41,6 +41,12 @@ const swiper = new Swiper('.swiper-container', {
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev'
+  },
+  breakpoints: {
+    767: {
+      slidesPerView: 3,
+      setWrapperSize: true
+    }
   }
 })
 
@@ -56,7 +62,7 @@ scrollReveal.reveal(
   `#home .image, #home .text,
   #about .image, #about .text,
   #services header, #services .card,
-  #clients header, #clients .clients
+  #testimonials header, #testimonials .testimonials
   #contact .text, #contact .links
   `,
   { interval: 100 }
@@ -65,7 +71,7 @@ scrollReveal.reveal(
 //Back to top
 const backToTop = document.querySelector('.back-to-top')
 window.addEventListener('scroll', function () {
-  if (window.scrollY >= 360) {
+  if (window.scrollY >= 500) {
     backToTop.classList.add('show')
   } else {
     backToTop.classList.remove('show')

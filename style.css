@@ -378,7 +378,6 @@ main {
 
 #clients {
   text-align: center;
-  padding-bottom: 4rem;
 }
 
 #clients .container {
@@ -543,4 +542,83 @@ footer .back-to-top a ion-icon {
 /*Extra large devices 1200 >*/
 /*large devices 1023 >*/
 /*large devices 992 >*/
-@media (min-width: 992px); /*700> >*/
+@media (min-width: 992px) {
+  .container {
+    max-width: 1120px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  nav .menu {
+    opacity: 1;
+    visibility: visible;
+    top: 0;
+  }
+  nav .menu ul {
+    display: flex;
+    gap: 2rem;
+  }
+
+  nav .menu ul li a.title {
+    font: 400 1rem 'DM Sans', sans-serif;
+  }
+  nav .icon-menu {
+    display: none;
+  }
+
+  .section {
+    padding: 10rem 0;
+  }
+  .section header {
+    max-width: 32rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #home .image {
+    order: 1;
+    position: relative;
+    width: 70%;
+  }
+  #home .text {
+    order: 0;
+    max-width: 24rem;
+    text-align: left;
+  }
+  #home .container {
+    grid-auto-flow: column;
+    width: fit-content;
+    justify-content: center;
+    margin: 0 auto;
+    align-items: center;
+  }
+  #home .image img {
+    top: 50%;
+    left: 45%;
+    transform: translateY(0);
+  }
+  #about .container {
+    grid-auto-flow: column;
+    width: fit-content;
+    margin: 0 auto;
+  }
+
+  .cards {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .card {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  #clients .container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #contact .container {
+    grid-auto-flow: column;
+    align-items: center;
+  }
+}
